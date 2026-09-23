@@ -1,15 +1,27 @@
-import { serve } from '@hono/node-server'
-import { Hono } from 'hono'
+import { serve } from "@hono/node-server";
+import { Hono } from "hono";
 
-const app = new Hono()
+type ApiMessage = {
+  message: string;
+  source: "hono";
+};
 
-app.get('/', (c) => {
-  return c.text('Hello Hono!')
-})
+const app = new Hono();
+
+app.get("/", (c) => {
+  return c.text("Backend is running");
+});
+
+app.get("/api/message", (c) => {
+  const response: ApiMessage = {
+    message: "Hello from Hono",
+    source: "hono"
+  };
+
+  return c.json(response);
+});
 
 serve({
   fetch: app.fetch,
-  port: 3000
-}, (info) => {
-  console.log(`Server is running on http://localhost:${info.port}`)
-})
+  port: 4000
+});
