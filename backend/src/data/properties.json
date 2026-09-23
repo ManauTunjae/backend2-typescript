@@ -1,0 +1,34 @@
+[
+  {
+    "property_id": "property_1001",
+    "title": "Cozy Studio in Södermalm",
+    "description": "A bright and cozy studio apartment close to cafés, parks and public transport.",
+    "location": "Stockholm, Sweden",
+    "price_per_night": 850,
+    "max_guests": 2
+  },
+  {
+    "property_id": "property_1002",
+    "title": "Modern Loft by the Harbor",
+    "description": "Spacious loft with harbor views, perfect for couples or small families.",
+    "location": "Gothenburg, Sweden",
+    "price_per_night": 1200,
+    "max_guests": 4
+  },
+  {
+    "property_id": "property_1003",
+    "title": "Countryside Cabin",
+    "description": "A peaceful wooden cabin surrounded by forest, ideal for a quiet getaway.",
+    "location": "Dalarna, Sweden",
+    "price_per_night": 650,
+    "max_guests": 6
+  },
+  {
+    "property_id": "property_1004",
+    "title": "City Center Apartment",
+    "description": "Newly renovated apartment right in the heart of the city, walking distance to everything.",
+    "location": "Malmö, Sweden",
+    "price_per_night": 950,
+    "max_guests": 3
+  }
+]
